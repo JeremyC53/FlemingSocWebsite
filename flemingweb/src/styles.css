@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@300&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url("background.png");
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+}
+
+.nav {
+  background-color: #2e2e2e;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 1rem;
+}
+
+.nav ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+}
+
+.nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav li:hover {
+  color: #afcef0;
+}
+
+.home {
+  gap: 5rem;
+  font-size: 1.3rem;
+  font-family: "Roboto Slab", serif;
+}
+
+.wrapper {
+  margin-top: 20vh;
+  margin-bottom: 11vh;
+  display: flex;
+  justify-content: center;
+}
+.wrapper2 {
+  margin-top: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.typewriter {
+  width: 53.55ch;
+  animation: typing 2s steps(42), blink 0.4s step-end 16 alternate;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2.5px solid transparent;
+  line-height: 10px;
+  font-family: monospace;
+  font-size: 1.8em;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: black;
+  }
+}
+
+.fading {
+  font-family: monospace;
+  font-size: 1.2 em;
+  animation: fadeIn 7s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
